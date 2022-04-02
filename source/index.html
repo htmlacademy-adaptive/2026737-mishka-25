@@ -18,18 +18,18 @@
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Каталог товаров</a>
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a>Вязание на заказ</a>
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
         <li class="user-list__item">
-          <a>Поиск по сайту</a>
+          <a class="site-list__link" href="#">Поиск по сайту</a>
         </li>
         <li class="user-list__item">
-          <a>Корзина: пока пуста</a>
+          <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -92,8 +92,8 @@
             <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <p class="reviews__author-contact">@misssssiskras</p>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <button class="reviews__prev slider__button slider__button--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next slider__button slider__button--next" type="button">Следующий отзыв</button>
         </div>
         <a class="reviews__write button" href="review-form.html">Написать</a>
       </div>
@@ -182,7 +182,7 @@
             <ul class="cart-form__list">
               <li class="cart-form__item">
                 <label class="cart-form__control">
-                  <input class="cart-form__control--radio visually-hidden" type="radio" name="size" value="small"
+                  <input class="cart-form__control-radio visually-hidden" type="radio" name="size" value="small"
                     checked>
                   <span class="visually-hidden">маленький</span>
                   <span class="cart-form__control--button">S</span>
@@ -190,7 +190,7 @@
               </li>
               <li class="cart-form__item">
                 <label class="cart-form__control">
-                  <input class="cart-form__control--radio visually-hidden" type="radio" name="size" value="medium">
+                  <input class="cart-form__control-radio visually-hidden" type="radio" name="size" value="medium">
                   <span class="visually-hidden">средний</span>
                   <span class="cart-form__control--button">M</span>
                 </label>
