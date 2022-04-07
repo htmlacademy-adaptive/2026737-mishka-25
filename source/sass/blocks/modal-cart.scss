@@ -1,0 +1,11 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.modal-cart__title {
+  @include font(700, 25px, 30px);
+  color: $color-text-title;
+}
+
+.modal-cart__form-button {
+  @include font(700, 17px, 16px);
+}

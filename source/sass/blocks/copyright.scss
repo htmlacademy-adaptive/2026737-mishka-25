@@ -1,0 +1,7 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.copyright__text {
+  @include font(700, 19px, 18px);
+  color: $color-text-title;
+}

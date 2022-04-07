@@ -1,0 +1,16 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.making__title {
+  @include font(700, 17px, 24px);
+  color: $color-text-title;
+}
+
+.making__text {
+  @include font(400, 13px, 24px);
+  color: $color-text-second;
+}
+
+.making__link {
+  text-decoration: none;
+}

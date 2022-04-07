@@ -1,0 +1,46 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.order-form__fieldset {
+  border: none;
+}
+
+.order-form__legend {
+  @include font(700, 17px, 16px);
+  color: $color-text-green;
+}
+
+.order-form__list {
+  list-style-type: none;
+}
+
+.order-form__label {
+  @include font(700, 17px, 18px);
+  color: $color-text-title;
+}
+
+.order-form__label--green {
+  @include font(700, 17px, 18px);
+  color: $color-text-green;
+}
+
+.order-form__note {
+  @include font(400, 14px, 16px);
+  color: $color-text-second;
+}
+
+.order-form__button {
+  @include font(700, 17px, 16px);
+}
+
+.order-form__input {
+  @include font(400, 19px, 18px);
+  font-family: inherit;
+  color: $color-text-input;
+}
+
+.order-form__input::placeholder {
+  @include font(400, 19px, 18px);
+  font-family: inherit;
+  color: $color-text-input-placeholder;
+}

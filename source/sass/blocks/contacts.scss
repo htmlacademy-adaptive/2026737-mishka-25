@@ -1,0 +1,17 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.contacts__heading {
+  @include font(700, 25px, 30px);
+  color: $color-text-title;
+}
+
+.contacts__title {
+  @include font(400, 14px, 30px);
+  color: $color-text-title;
+}
+
+.contacts__description {
+  @include font(400, 14px, 30px);
+  color: $color-text-title;
+}

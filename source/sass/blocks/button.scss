@@ -1,0 +1,19 @@
+@import "../color.scss";
+@import "../fonts.scss";
+
+.button {
+  font-family: inherit;
+  border: 2px solid;
+}
+
+.button--ghost {
+  color: $color-text-second;
+  background-color: $color-bg-btn-ghost;
+  border-color: $color-border-btn-ghost;
+}
+
+.button--green {
+  color: $color-text-invert;
+  border-color: $color-border-btn-green;
+  background-color: $color-bg-btn-green;
+}

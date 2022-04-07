@@ -1,0 +1,16 @@
+@import "../color.scss";
+@import "../mixin.scss";
+
+.cart-form__group {
+  border: none;
+}
+
+.cart-form__title {
+  @include font(400, 15px, 30px);
+  color: $color-text-second;
+}
+
+.cart-form__list {
+  @include font(700, 17px, 16px);
+  list-style-type: none;
+}
