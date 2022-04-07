@@ -1,5 +1,10 @@
+@import "variables.scss";
 @import "fonts.scss";
+@import "mixin.scss";
+@import "global.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
+@import "blocks/button.scss";
 @import "blocks/main-container.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
@@ -18,7 +23,6 @@
 @import "blocks/social.scss";
 @import "blocks/modal-cart.scss";
 @import "blocks/cart-form.scss";
-@import "blocks/button.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product-card.scss";
 @import "blocks/making.scss";

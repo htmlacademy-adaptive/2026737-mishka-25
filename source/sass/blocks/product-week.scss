@@ -1,6 +1,3 @@
-@import "../color.scss";
-@import "../mixin.scss";
-
 .product-week__title {
   @include font(700, 25px, 30px);
   color: $color-text-title;
@@ -9,6 +6,7 @@
 .product-week__subtitle {
   @include font(700, 17px, 20px);
   color: $color-text-green;
+  text-transform: uppercase;
 }
 
 .product-week__description {
@@ -18,5 +16,5 @@
 
 .product-week__price {
   @include font(700, 17px, 24px);
-  color: $color-text-title;
+  color: $color-text-second;
 }

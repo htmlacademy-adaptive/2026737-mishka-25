@@ -1,12 +1,11 @@
-@import "../color.scss";
-@import "../fonts.scss";
-
 .button {
-  font-family: inherit;
   border: 2px solid;
+  text-transform: uppercase;
+  font-family: $font-basic;
 }
 
 .button--ghost {
+  @include font(700, 18px, 20px);
   color: $color-text-second;
   background-color: $color-bg-btn-ghost;
   border-color: $color-border-btn-ghost;

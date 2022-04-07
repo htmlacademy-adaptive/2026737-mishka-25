@@ -1,6 +1,3 @@
-@import "../color.scss";
-@import "../mixin.scss";
-
 .order-form__fieldset {
   border: none;
 }
@@ -8,6 +5,7 @@
 .order-form__legend {
   @include font(700, 17px, 16px);
   color: $color-text-green;
+  text-transform: uppercase;
 }
 
 .order-form__list {
@@ -22,6 +20,7 @@
 .order-form__label--green {
   @include font(700, 17px, 18px);
   color: $color-text-green;
+  text-transform: uppercase;
 }
 
 .order-form__note {
@@ -34,7 +33,7 @@
 }
 
 .order-form__input {
-  @include font(400, 19px, 18px);
+  @include font(400, 17px, 18px);
   font-family: inherit;
   color: $color-text-input;
 }

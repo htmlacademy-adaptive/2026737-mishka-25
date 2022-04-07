@@ -1,6 +1,3 @@
-@import "../color.scss";
-@import "../mixin.scss";
-
 .cart-form__group {
   border: none;
 }
@@ -13,4 +10,8 @@
 .cart-form__list {
   @include font(700, 17px, 16px);
   list-style-type: none;
+}
+
+.cart-form__control-button {
+  border-color: $color-border-btn-size;
 }
