@@ -1,0 +1,17 @@
+.catalog-navigation__list {
+  list-style-type: none;
+}
+
+.catalog-navigation__link {
+  @include font(700, 19px, 24px);
+  color: $color-text-invert;
+  text-decoration: none;
+}
+
+.catalog-navigation__link--lighten {
+  background-color: $color-bg-btn-green;
+}
+
+.catalog-navigation__link--darken {
+  background-color: $color-bg-btn-green-darken;
+}

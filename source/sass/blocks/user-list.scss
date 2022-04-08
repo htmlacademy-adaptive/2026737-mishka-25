@@ -1,0 +1,5 @@
+.user-list__link {
+  @include font(700, 17px, 24px);
+  color: $color-text-title;
+  text-decoration: none;
+}

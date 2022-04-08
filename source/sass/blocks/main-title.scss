@@ -1,0 +1,10 @@
+.main-title {
+  @include font(700, 27px, 30px);
+  color: $color-text-title;
+  background-color: $color-bg-darken;
+}
+
+.main-title--index {
+  background-image: url("../../img/hero-mobile2x1.jpg");
+  background-repeat: no-repeat;
+}

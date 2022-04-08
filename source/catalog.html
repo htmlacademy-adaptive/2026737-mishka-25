@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo-mishka.svg" width="86" height="35"
         alt="Интернет-магазин игрушек ручной работы - Мишка.">
     </a>
@@ -18,7 +19,7 @@
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link">Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html">Вязание на заказ</a>
@@ -84,10 +85,10 @@
     </section>
     <section class="making">
       <h2 class="making__title">Процесс производства</h2>
-      <img src="img/video.jpg" width="260" height="150" alt="Процесс производства">
+      <img class="making__img-no-video" src="img/video.jpg" width="260" height="150" alt="Процесс производства">
       <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a class="making__link button" href="form.html">Сделать заказ</a>
+      <a class="making__link button button--ghost" href="form.html">Сделать заказ</a>
     </section>
   </main>
   <footer class="main-footer">
@@ -151,26 +152,26 @@
               <label class="cart-form__control">
                 <input class="cart-form__control-radio visually-hidden" type="radio" name="size" value="small" checked>
                 <span class="visually-hidden">маленький</span>
-                <span class="cart-form__control-button">S</span>
+                <span class="cart-form__control-button button button--ghost">S</span>
               </label>
             </li>
             <li class="cart-form__item">
               <label class="cart-form__control">
                 <input class="cart-form__control-radio visually-hidden" type="radio" name="size" value="medium">
                 <span class="visually-hidden">средний</span>
-                <span class="cart-form__control-button">M</span>
+                <span class="cart-form__control-button button button--ghost">M</span>
               </label>
             </li>
             <li class="cart-form__item">
               <label class="cart-form__control">
                 <input class="cart-form__control-radio visually-hidden" type="radio" name="size" value="large">
                 <span class="visually-hidden">большой</span>
-                <span class="cart-form__control-button">L</span>
+                <span class="cart-form__control-button button button--ghost">L</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="modal-cart__form-button" type="submit">Добавить</button>
+        <button class="modal-cart__form-button button button--green" type="submit">Добавить</button>
       </form>
     </section>
   </div>

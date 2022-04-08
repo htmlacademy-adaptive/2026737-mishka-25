@@ -1,0 +1,14 @@
+.making__title {
+  @include font(700, 17px, 24px);
+  color: $color-text-title;
+}
+
+.making__text {
+  @include font(400, 13px, 24px);
+  color: $color-text-second;
+}
+
+.making__link {
+  @include font(700, 18px, 16px);
+  text-decoration: none;
+}

@@ -1,0 +1,10 @@
+.about-us__title {
+  @include font(700, 25px, 30px);
+  color: $color-text-title;
+}
+
+.about-us__list {
+  @include font(700, 17px, 20px);
+  color: $color-text-title;
+  list-style-type: none;
+}
