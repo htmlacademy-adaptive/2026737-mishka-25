@@ -5,8 +5,12 @@
 .page__body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  min-width: 320px;
+  background-color: $color-bg;
+}
+
+.page__container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  background-color: $color-bg;
+  min-height: 100vh;
 }

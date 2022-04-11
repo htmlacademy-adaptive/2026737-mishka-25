@@ -7,4 +7,39 @@
   @include font(700, 17px, 20px);
   color: $color-text-title;
   list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__title {
+    @include font(700, 43px, 50px);
+  }
+
+  .about-us__list {
+    @include font(700, 20px, 22px);
+    columns: 2;
+  }
+
+  .about-us__item {
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-left: 225px;
+  }
+
+  .about-us__title {
+    @include font(700, 53px, 57px);
+  }
+
+  .about-us__list {
+    @include font(700, 20px, 22px);
+    columns: 2;
+  }
+
+  .about-us__item {
+    width: 330px;
+  }
 }

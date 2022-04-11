@@ -1,0 +1,16 @@
+.additional-list {
+  order: 4;
+  display: none;
+}
+
+.additional-list__link {
+  @include font(700, 15px, 24px);
+  color: $color-text-title;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-list {
+    display: flex;
+  }
+}

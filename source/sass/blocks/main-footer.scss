@@ -1,3 +1,37 @@
 .main-footer {
   background-color: $color-bg-darken;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-footer__social {
+  min-width: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__logo {
+    display: block;
+  }
+
+  .main-footer__wrapper {
+    justify-content: space-between;
+  }
+}

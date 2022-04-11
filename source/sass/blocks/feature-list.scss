@@ -1,4 +1,11 @@
 .feature-list {
   @include font(400, 15px, 20px);
   color: $color-text-second;
+  display: grid;
+  grid-template-columns: 95px 160px;
+  margin: 0;
+}
+
+.feature-list__description {
+  margin: 0;
 }

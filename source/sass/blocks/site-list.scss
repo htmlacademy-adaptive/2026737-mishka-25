@@ -3,3 +3,14 @@
   color: $color-text-title;
   text-decoration: none;
 }
+
+
+.site-list {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
