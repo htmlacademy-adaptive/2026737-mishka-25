@@ -1,17 +1,21 @@
 .order-form__fieldset {
   border: none;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__legend {
   @include font(700, 17px, 16px);
   color: $color-text-green;
   text-transform: uppercase;
+  width: 260px;
+  margin: 0;
 }
 
 .order-form__list {
   list-style-type: none;
   padding: 0;
+  flex-grow: 1;
 }
 
 .order-form__label {
@@ -50,13 +54,11 @@
 @media (min-width: $tablet-width) {
   .order-form__wrap {
     &--contact {
-      padding-left: 175px;
-      position: relative;
+      display: flex;
     }
 
     &--other {
-      padding-left: 175px;
-      position: relative;
+      display: flex;
     }
 
     &--bottom {
@@ -70,28 +72,30 @@
     }
   }
 
-  .order-form__legend {
-    position: absolute;
-    left: 50px;
-    top: 20px;
+  .order-form__fieldset {
+    flex-direction: row;
   }
 
-  .order-form__wrap--contact .order-form__label,
-  .order-form__wrap--other .order-form__label {
-    position: absolute;
-    left: 50px;
+  .order-form__legend {
+    width: 100px;
+    padding-top: 20px;
   }
 
   .order-form__label {
     @include font(700, 19px, 18px);
+
+    &--green {
+      width: 100px;
+    }
   }
 
   .order-form__list {
-    padding-left: 175px;
+    padding-left: 120px;
 
     &--color {
       display: flex;
       flex-wrap: wrap;
+      width: 448px;
     }
   }
 

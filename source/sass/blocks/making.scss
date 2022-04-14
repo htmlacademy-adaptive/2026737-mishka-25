@@ -23,6 +23,24 @@
   text-align: center;
 }
 
+.making__video-wrap {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-size: 101px 77px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .making__img-no-video {
     width: 668px;
@@ -53,7 +71,7 @@
     align-items: center;
   }
 
-  .making__img-no-video {
+  .making__video-wrap {
     grid-column: 1/2;
     grid-row: 1/-1;
   }

@@ -14,6 +14,7 @@
     padding: 73px 0 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -21,13 +22,15 @@
   @include font(700, 27px, 30px);
   color: $color-text-title;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 30px;
+  width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
   .main-title__text {
     @include font(700, 43px, 50px);
+    width: $tablet-width;
   }
 
   .main-title {
@@ -46,6 +49,7 @@
 @media (min-width: $desktop-width) {
   .main-title__text {
     @include font(700, 53px, 57px);
+    width: $desktop-width;
   }
 
   .main-title {
