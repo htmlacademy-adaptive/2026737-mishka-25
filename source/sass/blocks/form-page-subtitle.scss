@@ -1,4 +1,19 @@
 .form-page-subtitle {
   @include font(400, 13px, 24px);
   color: $color-text-second;
+  padding-top: 17px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page-subtitle {
+    @include font(400, 17px, 30px);
+    padding-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page-subtitle {
+    padding: 98px 224px 30px;
+  }
 }
