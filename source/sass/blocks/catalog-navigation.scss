@@ -17,12 +17,17 @@
   @include font(700, 19px, 24px);
   color: $color-text-invert;
   text-decoration: none;
+  width: 100vw;
+  min-height: 103px;
+  display: block;
+}
+
+.catalog-navigation__link-content {
+  width: 320px;
   display: grid;
   grid-template-columns: 4fr 1fr;
   align-items: center;
   padding: 20px 30px 20px;
-  width: 100vw;
-  min-height: 103px;
 }
 
 .catalog-navigation__link--lighten {
