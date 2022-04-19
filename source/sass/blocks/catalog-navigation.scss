@@ -93,6 +93,10 @@
     width: 334px;
     min-height: 119px;
   }
+
+  .catalog-navigation__link-icon {
+    transform: translate(5px, 7px);
+  }
 }
 
 @media (min-width: $desktop-width) {

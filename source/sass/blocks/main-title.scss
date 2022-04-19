@@ -37,13 +37,12 @@
   .main-title {
     min-height: 238px;
     padding-top: 101px;
-    margin-top: -88px;
 
     &--index {
-      min-height: 746px;
+      min-height: 658px;
       background-image: url("../img/hero-desktop.jpg");
       background-position: bottom;
-      padding-top: 155px;
+      padding-top: 68px;
     }
 
     &--index::after {
@@ -70,14 +69,14 @@
     min-height: 272px;
 
     &--index {
-      min-height: 763px;
-      padding: 158px 0 17px;
-      background-position: top;
+      min-height: 675px;
+      padding: 71px 0 17px;
+      background-position: center -89px;
     }
 
     &--index::after {
       background-image: url("../img/zigzag-fill-desktop.svg");
-      width: 1050px;
+      width: 1150px;
       height: 34px;
       bottom: 0;
     }

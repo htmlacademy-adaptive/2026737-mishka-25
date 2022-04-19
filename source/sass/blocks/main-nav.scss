@@ -6,17 +6,6 @@
   min-height: 79px;
   padding-top: 12px;
   z-index: 2;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 99vw;
-    background-color: #ececec;
-    top: 79px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .main-nav__logo-wrap {
@@ -130,8 +119,6 @@
     display: block;
   }
 
-  //
-
   .main-nav {
     width: 100vw;
   }
@@ -146,7 +133,7 @@
       content: "";
       position: absolute;
       height: 1px;
-      width: 100vw;
+      width: 98vw;
       background-color: #ececec;
       bottom: 0;
       left: 50%;
@@ -163,10 +150,6 @@
     justify-content: space-between;
     align-items: baseline;
     padding-top: 0;
-
-    &::after {
-      top: 88px;
-    }
   }
 
   .main-nav__link {
