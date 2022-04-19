@@ -1,11 +1,49 @@
 .feature-list {
   @include font(400, 15px, 20px);
   color: $color-text-second;
-  display: grid;
-  grid-template-columns: 95px 160px;
   margin: 0;
+  word-wrap: break-word;
+}
+
+.feature-list__title {
+  display: inline-block;
+  width: 94px;
+  padding-right: 10px;
 }
 
 .feature-list__description {
+  display: inline-block;
   margin: 0;
+  width: 160px;
+}
+
+.feature-list__item {
+  border-bottom: 1px solid #ececec;
+  padding: 9px 0 11px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feature-list {
+    width: 292px;
+    margin: 16px 0;
+  }
+
+  .feature-list__title {
+    width: 92px;
+  }
+
+  .feature-list__item {
+    padding: 10px 35px 10px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-list {
+    margin: 0;
+    padding: 37px 0 100px;
+  }
+
+  .feature-list__item {
+    padding: 10px 35px 10px 0;
+  }
 }

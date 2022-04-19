@@ -13,7 +13,24 @@
 }
 
 .main-footer__social {
-  min-width: 150px;
+  min-width: 171px;
+  padding: 28px 0 26px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    border-bottom: 1px solid #e5e5e5;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.main-footer__copyright {
+  min-height: 79px;
+  padding: 10px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +40,14 @@
 
   .main-footer__wrapper {
     justify-content: space-between;
+    align-items: center;
+    min-height: 143px;
+  }
+
+  .main-footer__social {
+    &::after {
+      display: none;
+    }
   }
 }
 

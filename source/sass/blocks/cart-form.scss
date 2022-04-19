@@ -1,17 +1,49 @@
 .cart-form__group {
   border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-form__title {
   @include font(400, 15px, 30px);
   color: $color-text-second;
+  margin: 0 auto;
 }
 
 .cart-form__list {
   @include font(700, 17px, 16px);
   list-style-type: none;
+  padding: 0;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cart-form__control-button {
+  @include font(700, 17px, 16px);
   border-color: $color-border-btn-size;
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding: 12px;
+}
+
+.cart-form__control-radio[type="radio"]:checked + .cart-form__control-button {
+  border-color: $color-border-btn-green;
+}
+
+@media (min-width: $tablet-width) {
+  .cart-form__title {
+    @include font(400, 17px, 30px);
+  }
+
+  .cart-form__control-button {
+    width: 112px;
+  }
+
+  .cart-form__list {
+    width: 350px;
+  }
 }

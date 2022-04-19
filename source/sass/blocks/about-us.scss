@@ -1,6 +1,7 @@
 .about-us__title {
   @include font(700, 25px, 30px);
   color: $color-text-title;
+  margin: 31px 0;
 }
 
 .about-us__list {
@@ -10,24 +11,103 @@
   padding: 0;
 }
 
+.about-us__item {
+  padding: 53px 0 30px;
+  position: relative;
+
+  &:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/icon-flower.svg");
+    background-repeat: no-repeat;
+    left: 8px;
+    top: -2px;
+  }
+
+  &:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-money.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    top: -2px;
+  }
+
+  &:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    left: 8px;
+    top: 2px;
+  }
+
+  &:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-clew.svg");
+    background-repeat: no-repeat;
+    left: 3px;
+    top: 0;
+  }
+
+  &:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-rocket.svg");
+    background-repeat: no-repeat;
+    left: -6px;
+    top: 1px;
+  }
+
+  &:nth-child(6)::after {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-present.svg");
+    background-repeat: no-repeat;
+    left: 4px;
+    top: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 25px;
+  }
+
   .about-us__title {
     @include font(700, 43px, 50px);
   }
 
   .about-us__list {
     @include font(700, 20px, 22px);
+    width: 650px;
     columns: 2;
+    margin: 45px 0 25px;
   }
 
   .about-us__item {
     width: 330px;
+    padding: 53px 0 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
     padding-left: 225px;
+    padding-top: 38px;
   }
 
   .about-us__title {
@@ -37,9 +117,11 @@
   .about-us__list {
     @include font(700, 20px, 22px);
     columns: 2;
+    width: 680px;
   }
 
   .about-us__item {
     width: 330px;
+    padding: 51px 0 59px;
   }
 }

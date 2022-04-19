@@ -12,5 +12,11 @@
 @media (min-width: $desktop-width) {
   .additional-list {
     display: flex;
+    justify-content: flex-start;
+    width: 380px;
+  }
+
+  .additional-list__item:not(:last-child) {
+    margin-right: 61px;
   }
 }
