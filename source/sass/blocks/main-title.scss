@@ -4,6 +4,7 @@
   background-color: $color-bg-darken;
   min-height: 177px;
   padding-top: 73px;
+  position: relative;
 
   &--index {
     background-image: url("../img/hero-mobile2x1.jpg");
@@ -36,12 +37,24 @@
   .main-title {
     min-height: 238px;
     padding-top: 101px;
-    margin-top: -80px;
 
     &--index {
-      min-height: 758px;
+      min-height: 658px;
       background-image: url("../img/hero-desktop.jpg");
-      padding-top: 155px;
+      background-position: bottom;
+      padding-top: 68px;
+    }
+
+    &--index::after {
+      content: "";
+      position: absolute;
+      width: 770px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      background-repeat: no-repeat;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -56,8 +69,16 @@
     min-height: 272px;
 
     &--index {
-      min-height: 763px;
-      padding-top: 158px;
+      min-height: 675px;
+      padding: 71px 0 17px;
+      background-position: center -89px;
+    }
+
+    &--index::after {
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      width: 1150px;
+      height: 34px;
+      bottom: 0;
     }
   }
 }

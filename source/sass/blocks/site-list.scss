@@ -2,14 +2,45 @@
   @include font(700, 17px, 24px);
   color: $color-text-title;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .site-list {
   @media (min-width: $tablet-width) {
     order: 3;
+    width: 330px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
+    width: 380px;
     order: 1;
+  }
+}
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 33px;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
   }
 }

@@ -1,4 +1,26 @@
+.copyright {
+  width: 180px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__icon {
+  transform: translateY(4px);
+}
+
 .copyright__text {
   @include font(700, 19px, 18px);
   color: $color-text-title;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    align-items: baseline;
+  }
+
+  .copyright__icon {
+    transform: translateY(9px);
+  }
 }
