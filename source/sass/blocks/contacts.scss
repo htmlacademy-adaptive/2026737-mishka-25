@@ -39,15 +39,6 @@
     text-underline-offset: 5px;
     color: $color-text-title;
   }
-
-  // &--mail::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 167px;
-  //   border-bottom: 1px solid #62d1ba;
-  //   bottom: 3px;
-  //   left: 5px;
-  // }
 }
 
 .contacts__item {
@@ -59,7 +50,7 @@
 }
 
 .contacts__map {
-  width: 100vw;
+  width: 100%;
 }
 
 .contacts__feedback {
@@ -116,20 +107,11 @@
 
   .contacts__description {
     width: 240px;
-
-    // &--mail::after {
-    //   width: 205px;
-    //   bottom: 29px;
-    // }
   }
 
   .contacts__list {
     flex-direction: row;
     margin-bottom: 50px;
-  }
-
-  .contacts__map-wrap {
-    width: $tablet-width;
   }
 
   .contacts__feedback {
@@ -186,12 +168,6 @@
   .contacts__description {
     @include font(400, 17px, 30px);
   }
-
-  // .contacts__description {
-  //   &--mail::after {
-  //     bottom: -4px;
-  //   }
-  // }
 
   .contacts__feedback {
     grid-column: 2 / 3;

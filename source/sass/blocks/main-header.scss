@@ -8,8 +8,15 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    background-image: linear-gradient(to top, #f9f9f9 88px, #e6e6e6 88px, #e6e6e6 89px, $color-bg 89px);
     background-repeat: no-repeat;
     background-size: auto;
+
+    &--index {
+      background-image: linear-gradient(to top, #f9f9f9 88px, #e6e6e6 88px, #e6e6e6 89px, $color-bg 89px);
+    }
+
+    &--inner {
+      background-image: linear-gradient(to top, $color-bg-darken 88px, #e6e6e6 88px, #e6e6e6 89px, $color-bg 89px);
+    }
   }
 }

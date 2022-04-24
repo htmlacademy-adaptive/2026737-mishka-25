@@ -10,29 +10,36 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="main-header">
-      <nav class="main-nav container">
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="img/logo-mishka.svg" width="86" height="35"
-            alt="Интернет-магазин игрушек ручной работы - Мишка.">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+    <header class="main-header main-header--inner">
+      <nav class="main-nav main-nav--closed main-nav--nojs container">
+        <div class="main-nav__logo-wrap">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo-mishka.svg" width="86" height="35"
+              alt="Интернет-магазин игрушек ручной работы - Мишка.">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="main-nav__list main-nav__list--mobile main-nav__list--site site-list">
+          <li class="main-nav__item main-nav__item--catalog site-list__item">
+            <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="main-nav__item user-list__item">
-            <a class="user-list__link" href="#">Поиск по сайту</a>
+        <ul class="main-nav__list main-nav__list--mobile main-nav__list--user user-list">
+          <li class="main-nav__item main-nav__item user-list__item-search">
+            <a class="main-nav__link main-nav__link--search user-list__link" href="#">
+              <span>Поиск по сайту</span>
+              <svg class="main-nav__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z" fill="#000"/></svg>
+            </a>
           </li>
-          <li class="main-nav__item user-list__item">
-            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+          <li class="main-nav__item user-list__item-cart">
+            <a class="main-nav__link main-nav__link--cart user-list__link user-list__link" href="#">Корзина: пока пуста
+              <svg class="main-nav__icon" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z" fill="#000"/></svg>
+            </a>
           </li>
         </ul>
         <ul class="main-nav__list additional-list">
@@ -56,18 +63,20 @@
         <div class="order-form__wrap">
           <fieldset class="order-form__fieldset container">
             <h2 class="order-form__legend">Тип</h2>
-            <ul class="order-form__list">
+            <ul class="order-form__list order-form__list--type">
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--radio visually-hidden" type="radio" name="type"
+                  <input class="order-form__control visually-hidden" type="radio" name="type"
                     value="accessory" checked>
-                  <span class="order-form__label-text">Аксесуары для интерьера</span>
+                  <span class="order-form__control-mark order-form__control-mark--radio"></span>
+                  <span class="order-form__label-text">Аксеcсуар для интерьера</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--radio visually-hidden" type="radio" name="type"
+                  <input class="order-form__control visually-hidden" type="radio" name="type"
                     value="toy">
+                  <span class="order-form__control-mark order-form__control-mark--radio order-form__control-mark--toy"></span>
                   <span class="order-form__label-text">Детская игрушка</span>
                 </label>
               </li>
@@ -76,48 +85,54 @@
         </div>
         <div class="order-form__wrap order-form__wrap--darken">
           <fieldset class="order-form__fieldset container">
-            <h2 class="order-form__legend">Цвет</h2>
+            <h2 class="order-form__legend order-form__legend--color">Цвет</h2>
             <ul class="order-form__list order-form__list--color">
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="white" checked>
-                  <span class="order-form__label-text">Белый</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Белый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="gray" checked>
-                  <span class="order-form__label-text">Серый</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Серый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="tiffany">
-                  <span class="order-form__label-text">Тиффани</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Тиффани</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="black">
-                  <span class="order-form__label-text">Черный</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Черный</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="pink">
-                  <span class="order-form__label-text">Розовый</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Розовый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__label">
-                  <input class="order-form__control order-form__control--checkbox visually-hidden" type="checkbox"
+                  <input class="order-form__control visually-hidden" type="checkbox"
                     name="color" value="orange">
-                  <span class="order-form__label-text">Оранжевый</span>
+                  <span class="order-form__control-mark order-form__control-mark--checkbox"></span>
+                  <span class="order-form__label-text order-form__label-text--color">Оранжевый</span>
                 </label>
               </li>
             </ul>
@@ -125,8 +140,8 @@
         </div>
         <div class="order-form__wrap">
           <fieldset class="order-form__fieldset container">
-            <h2 class="order-form__legend">ФИО</h2>
-            <ul class="order-form__list">
+            <h2 class="order-form__legend order-form__legend--full-name">ФИО</h2>
+            <ul class="order-form__list order-form__list--full-name">
               <li class="order-form__item order-form__item--name">
                 <label class="order-form__label" for="name">Имя:</label>
                 <input class="order-form__input" id="name" type="text" name="name" placeholder="Введите Ваше имя*"
@@ -145,14 +160,16 @@
             </ul>
           </fieldset>
         </div>
-        <div class="order-form__wrap order-form__wrap--darken">
-          <div class="order-form__wrap order-form__wrap--contact container">
+        <div class="order-form__wrap order-form__wrap--darken order-form__wrap--contacts">
+          <div class="order-form__wrap order-form__wrap--contact order-form__wrap--phone container">
             <label class="order-form__label order-form__label--green" for="phone">ТЕЛ </label>
             <input class="order-form__input" id="phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" fill="#000"><path d="M17.44 24h-1.1a17.63 17.63 0 0 1-11.2-5.73A18.8 18.8 0 0 1 0 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 0 0 7.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06ZM12.6 1.48A10.8 10.8 0 0 1 23.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48Z"/><path d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 0 0-3.03-2.96ZM12.6 6.12a6.11 6.11 0 0 1 6.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1Z"/></g></svg>
           </div>
-          <div class="order-form__wrap order-form__wrap--contact container">
+          <div class="order-form__wrap order-form__wrap--contact order-form__wrap--mail container">
             <label class="order-form__label order-form__label--green" for="email">E-MAIL</label>
             <input class="order-form__input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+            <svg class="order-form__input-icon" width="32" height="21" viewBox="0 0 32 21" fill="#000" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z"/></svg>
           </div>
         </div>
         <div class="order-form__wrap order-form__wrap--other container">
@@ -219,6 +236,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
