@@ -80,16 +80,17 @@
 @media (min-width: $tablet-width) {
   .making {
     padding-top: 24px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
   }
 
   .making__wrap {
-    padding-bottom: 44px;
+    padding-bottom: 45px;
   }
 
   .making__img-no-video {
     width: 668px;
     height: 455px;
+    display: block;
   }
 
   .making__video-wrap {
@@ -98,7 +99,7 @@
 
   .making__title {
     @include font(700, 20px, 24px);
-    padding: 35px 30px 26px 106px;
+    padding: 39px 30px 25px 106px;
     order: 2;
 
     &::before {
@@ -122,7 +123,7 @@
 
 @media (min-width: $desktop-width) {
   .making {
-    margin-bottom: 100px;
+    margin-bottom: 104px;
   }
 
   .making__wrap {
