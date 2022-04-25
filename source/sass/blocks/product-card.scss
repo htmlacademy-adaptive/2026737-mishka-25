@@ -108,6 +108,11 @@
   .product-card__button {
     right: 26px;
   }
+
+  .product-card__img {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -134,5 +139,10 @@
 
   .product-card__buy-wrap {
     padding: 22px 0 26px;
+  }
+
+  .product-card__img {
+    width: 316px;
+    height: 462px;
   }
 }

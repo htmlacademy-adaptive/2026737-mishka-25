@@ -133,6 +133,11 @@
     margin-top: 10px;
   }
 
+  .product-week__photo-wrap {
+    grid-column: 3/5;
+    grid-row: 2/6;
+  }
+
   .product-week__photo {
     grid-column: 3 / 5;
     grid-row: 2 / 6;
@@ -211,6 +216,11 @@
     grid-column: 2 / 4;
     grid-row: 5 / 6;
     margin-top: auto;
+  }
+
+  .product-week__photo-wrap {
+    grid-column: 4/7;
+    grid-row: 1/6;
   }
 
   .product-week__photo {

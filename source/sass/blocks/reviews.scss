@@ -92,11 +92,17 @@
   .reviews__wrapper {
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 79px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -165,6 +171,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
