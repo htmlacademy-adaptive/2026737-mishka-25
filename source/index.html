@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Мишка</title>
 </head>
 
@@ -14,8 +18,12 @@
       <nav class="main-nav main-nav--closed main-nav--nojs container">
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="img/logo-mishka.svg" width="86" height="35"
-              alt="Интернет-магазин игрушек ручной работы - Мишка.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-mishka-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-mishka-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-mishka.svg" width="86" height="35"
+                alt="Интернет-магазин игрушек ручной работы - Мишка.">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -98,8 +106,14 @@
               <dd class="feature-list__description">15 см</dd>
             </div>
           </dl>
-          <img class="product-week__photo product-week__photo--mobile" src="img/triple-set-mobile.jpg" width="260" height="315"
-            alt="Вязаные корзинки">
+          <div class="product-week__photo-wrap">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-week__photo" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315"
+                alt="Вязаные корзинки">
+            </picture>
+          </div>
           <span class="product-week__price">Цена: 990 руб.</span>
           <button class="product-week__button button button--ghost" type="button">Заказать</button>
         </div>
