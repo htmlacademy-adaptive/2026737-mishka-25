@@ -3,6 +3,14 @@
   color: $color-text-title;
   text-decoration: none;
   display: inline-block;
+
+  &:hover {
+    color: rgba($color-text-title, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-text-title, 0.3);
+  }
 }
 
 .product-card__title {
@@ -31,6 +39,18 @@
   &:nth-child(3) .product-card__title {
     margin: 20px 0 7px;
   }
+
+  &:hover {
+    .product-card__content {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    .product-card__content {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .product-card__content {
@@ -54,12 +74,30 @@
   position: relative;
 }
 
+.product-card__button-icon {
+  opacity: 0.2;
+}
+
 .product-card__button {
   border: none;
   background-color: transparent;
   position: absolute;
   right: 23px;
   cursor: pointer;
+
+  &:hover {
+    .product-card__button-icon {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .product-card__button-icon {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

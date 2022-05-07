@@ -72,14 +72,23 @@
   min-height: 52px;
 }
 
+.order-form__input-icon {
+  opacity: 0.2;
+}
+
 .order-form__input {
   @include font(400, 17px, 18px);
   font-family: inherit;
   color: $color-text-input;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid #62d1ba;
+  // border-bottom: 2px solid #444444;
   background-color: inherit;
+
+  &:disabled {
+    opacity: 0.2;
+  }
 
   &::placeholder {
     @include font(400, 17px, 18px);
@@ -87,10 +96,41 @@
     color: $color-text-input-placeholder;
   }
 
+  &:placeholder-shown {
+    border-bottom: 2px solid #444444;
+  }
+
   & + svg {
     position: absolute;
     right: 35px;
     bottom: 49px;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+
+    & + .order-form__input-icon {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    border-color: #62d1ba;
+
+    & + .order-form__input-icon {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
+
+  &--invalid {    //для невалидного поля
+    border-color: #ff0000;
   }
 }
 
@@ -117,6 +157,14 @@
     position: absolute;
     top: 9px;
   }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(#000000, 0.3);
+  }
 }
 
 .order-form__control[type="radio"]:checked + .order-form__control-mark::before {
@@ -141,6 +189,12 @@
   background-repeat: no-repeat;
 }
 
+.order-form__control {
+  &:disabled + .order-form__control-mark {
+    opacity: 0.2;
+  }
+}
+
 .order-form__list--color .order-form__item {
   padding-bottom: 18px;
 }
@@ -154,7 +208,24 @@
     height: 50px;
     padding-left: 0;
     border: none;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &--name .order-form__input:placeholder-shown {
+    border-bottom: 2px solid #444444;
+  }
+
+  &--name .order-form__input:hover {
+    border-color: #62d1ba;
+  }
+
+  &--name .order-form__input:active {
+    border-color: #62d1ba;
+    outline: none;
+  }
+
+  &--name .order-form__input:focus-visible {
+    outline: none;
   }
 }
 
@@ -187,8 +258,25 @@
     .order-form__input {
       height: 142px;
       padding: 15px;
-      border: 2px solid #444444;
+      border: 2px solid #62d1ba;
       resize: none;
+    }
+
+    .order-form__input:placeholder-shown {
+      border: 2px solid #444444;
+    }
+
+    .order-form__input:hover {
+      border-color: #62d1ba;
+    }
+
+    .order-form__input:active {
+      border-color: #62d1ba;
+      outline: none;
+    }
+
+    .order-form__input:focus-visible {
+      outline: none;
     }
   }
 

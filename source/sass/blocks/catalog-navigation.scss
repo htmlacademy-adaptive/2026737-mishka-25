@@ -30,8 +30,8 @@
   width: 320px;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  padding: 24px 30px 10px;
-  gap: 30px;
+  padding: 24px 30px 17px;
+  gap: 25px;
 }
 
 .catalog-navigation__link--lighten {
@@ -40,6 +40,7 @@
   &:hover {
     background-color: $color-bg-btn-green-hover;
     transform: translateY(-5px);
+    // transform: translate(1px, -5px);
     box-shadow: 0 5px $color-bg-btn-green-hover;
 
     .catalog-navigation__link-icon {
@@ -82,7 +83,7 @@
   .catalog-navigation__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 0;
     margin: 0;
     width: 668px;
@@ -103,7 +104,7 @@
   .catalog-navigation__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 0;
     margin: 0;
     width: 1050px;

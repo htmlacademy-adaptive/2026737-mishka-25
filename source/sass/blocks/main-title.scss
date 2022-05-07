@@ -29,7 +29,7 @@
   color: $color-text-title;
   text-align: center;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 30px 15px;
   width: $mobile-width;
 }
 
@@ -58,7 +58,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -12px;
       background-image: url("../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       width: 100%;
@@ -83,8 +83,10 @@
     }
 
     &::after {
-      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg.svg");
+      background-size: auto 34px;
       height: 34px;
+      bottom: 0;
     }
   }
 }

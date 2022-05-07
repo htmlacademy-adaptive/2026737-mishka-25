@@ -2,6 +2,7 @@
   border: 2px solid;
   text-transform: uppercase;
   font-family: $font-basic;
+  cursor: pointer;
 }
 
 .button--ghost {
@@ -9,6 +10,16 @@
   color: $color-text-second;
   background-color: $color-bg-btn-ghost;
   border-color: $color-border-btn-ghost;
+
+  &:hover {
+    color: $color-text-invert;
+    background-color: $color-bg-btn-ghost-hover;
+  }
+
+  &:active {
+    color: rgba($color-text-invert, 0.3);
+    background-color: $color-bg-btn-ghost-active;
+  }
 }
 
 .button--green {
