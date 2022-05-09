@@ -3,6 +3,13 @@
   color: $color-text-title;
   text-decoration: none;
   order: 2;
+  display: block;
+}
+
+.user-list__icon-links,
+.user-list__text-links {
+  list-style-type: none;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,10 +22,11 @@
   .user-list__wrap {
     position: relative;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     &--icon {
-      display: flex;
-      flex-wrap: wrap;
       max-width: 100px;
     }
 
@@ -45,8 +53,6 @@
 
   .user-list__item-search {
     width: 82px;
-    // border: 1px solid rgba(#000000, 0.1);
-    // border-right: 1px solid rgba(#000000, 0.1);
     padding: 25px 0;
     text-align: center;
     position: relative;

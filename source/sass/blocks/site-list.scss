@@ -16,7 +16,6 @@
   @media (min-width: $tablet-width) {
     order: 3;
     width: 330px;
-    // justify-content: flex-start;
     background-image: linear-gradient(to bottom, #e6e6e6 1px, #f1f1f1 1px);
     position: relative;
     justify-content: space-between;
@@ -27,8 +26,6 @@
       background-image: linear-gradient(to bottom, #e6e6e6 1px, #f1f1f1 1px);
       height: 100%;
       width: calc((100vw - 668px) / 2);
-      // top: 0;
-      // bottom: 0;
       left: calc(((100vw - 668px) / 2) * -1);
       z-index: -1;
     }
@@ -88,13 +85,3 @@
     width: 157px;
   }
 }
-
-// .site-list__item:not(:last-child) {
-//   @media (min-width: $tablet-width) {
-//     margin-right: 28px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin-right: 35px;
-//   }
-// }

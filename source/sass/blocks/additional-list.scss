@@ -9,12 +9,6 @@
   text-decoration: none;
 }
 
-// @media (min-width: $tablet-width) {
-//   .additional-list {
-
-//   }
-// }
-
 @media (min-width: $desktop-width) {
   .additional-list {
     display: flex;
@@ -29,8 +23,6 @@
       background-image: linear-gradient(to bottom, #e6e6e6 1px, #f1f1f1 1px);
       height: 100%;
       width: calc((100vw - 1050px) / 2);
-      // top: 0;
-      // bottom: 0;
       left: calc(((100vw - 1050px) / 2) * -1);
       z-index: -1;
     }

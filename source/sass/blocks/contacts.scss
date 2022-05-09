@@ -34,13 +34,6 @@
   padding-left: 5px;
   width: 185px;
   position: relative;
-
-  // &--mail a {
-  //   text-decoration: underline #62d1ba;
-  //   text-decoration-thickness: 1px;
-  //   text-underline-offset: 5px;
-  //   color: $color-text-title;
-  // }
 }
 
 .contacts__link {
@@ -151,7 +144,7 @@
     width: $desktop-width;
     display: grid;
     grid-template-columns: 148px 377px 525px;
-    grid-template-rows: 475px 52px;
+    grid-template-rows: auto auto;
     margin: 0 auto;
     padding: 0 50px 105px;
   }
