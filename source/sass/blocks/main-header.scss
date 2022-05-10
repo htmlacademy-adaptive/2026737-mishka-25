@@ -1,25 +1,14 @@
 .main-header {
   box-shadow: 0 1px 0 #ececec,
     inset 0 1px 0 #ececec;
-  background-image: linear-gradient(to top, #e6e6e6 1px, $color-bg 1px);
-  background-repeat: no-repeat;
-  background-size: auto;
+
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(to top, #e6e6e6 1px, $color-bg 1px);
+    position: absolute;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
-    background-repeat: no-repeat;
-    background-size: auto;
-
-    &--index {
-      background-image: linear-gradient(to top, #f9f9f9 88px, #e6e6e6 88px, #e6e6e6 89px, $color-bg 89px);
-    }
-
-    &--inner {
-      background-image: linear-gradient(to top, $color-bg-darken 88px, #e6e6e6 88px, #e6e6e6 89px, $color-bg 89px);
-    }
-  }
-
   .main-header__logo {
     width: 113px;
     height: 46px;

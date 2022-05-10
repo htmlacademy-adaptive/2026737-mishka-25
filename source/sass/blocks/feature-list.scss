@@ -7,7 +7,7 @@
 
 .feature-list__title {
   display: inline-block;
-  width: 94px;
+  width: 97px;
   padding-right: 10px;
 }
 
@@ -40,10 +40,14 @@
 @media (min-width: $desktop-width) {
   .feature-list {
     margin: 0;
-    padding: 37px 0 100px;
+    padding: 35px 0 92px;
   }
 
   .feature-list__item {
-    padding: 10px 35px 10px 0;
+    padding: 6px 35px 12px 0;
+  }
+
+  .feature-list__title {
+    line-height: 22px;
   }
 }

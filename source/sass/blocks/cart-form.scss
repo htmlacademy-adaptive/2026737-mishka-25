@@ -28,6 +28,10 @@
   width: 82px;
   height: 52px;
   padding: 12px;
+
+  &:hover {
+    border-color: $color-border-btn-size-hover;
+  }
 }
 
 .cart-form__control-radio[type="radio"]:checked + .cart-form__control-button {

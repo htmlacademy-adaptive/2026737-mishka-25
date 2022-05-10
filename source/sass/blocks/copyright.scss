@@ -10,17 +10,27 @@
   transform: translateY(4px);
 }
 
+.copyright__link {
+  &:hover {
+    .copyright__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .copyright__icon {
+      fill: rgba(#46c1ae, 0.3);
+    }
+  }
+}
+
 .copyright__text {
   @include font(700, 19px, 18px);
   color: $color-text-title;
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-    align-items: baseline;
-  }
-
   .copyright__icon {
-    transform: translateY(9px);
+    transform: translateY(-1px);
   }
 }
