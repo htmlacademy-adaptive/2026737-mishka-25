@@ -19,6 +19,7 @@
   width: 260px;
   display: flex;
   justify-content: space-between;
+  margin: 24px 0 32px;
 }
 
 .cart-form__control-button {
@@ -27,7 +28,7 @@
   display: block;
   width: 82px;
   height: 52px;
-  padding: 12px;
+  padding: 18px 12px 12px;
 
   &:hover {
     border-color: $color-border-btn-size-hover;
@@ -49,5 +50,6 @@
 
   .cart-form__list {
     width: 350px;
+    margin-top: 17px;
   }
 }

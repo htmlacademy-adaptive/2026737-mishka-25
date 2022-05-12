@@ -88,8 +88,8 @@
 
 @media (min-width: $tablet-width) {
   .making {
-    padding-top: 24px;
-    margin-bottom: 65px;
+    padding-top: 21px;
+    margin-bottom: 63px;
   }
 
   .making__wrap {
@@ -108,11 +108,11 @@
 
   .making__title {
     @include font(700, 20px, 24px);
-    padding: 39px 30px 25px 106px;
+    padding: 40px 30px 25px 106px;
     order: 2;
 
     &::before {
-      top: 32px;
+      top: 38px;
       left: 41px;
     }
   }
@@ -121,10 +121,11 @@
     @include font(400, 15px, 30px);
     padding: 0 40px;
     order: 3;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .making__link {
+    font-size: 17px;
     width: 584px;
     order: 4;
   }
@@ -133,6 +134,7 @@
 @media (min-width: $desktop-width) {
   .making {
     margin-bottom: 104px;
+    padding-top: 23px;
   }
 
   .making__wrap {
@@ -149,7 +151,7 @@
 
   .making__link {
     width: 230px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     margin-left: 79px;
     align-self: baseline;
   }
@@ -166,5 +168,9 @@
   .making__text {
     padding: 0 35px 0 80px;
     margin-bottom: 20px;
+  }
+
+  .making__img-no-video {
+    width: 682px;
   }
 }

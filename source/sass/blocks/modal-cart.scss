@@ -30,6 +30,7 @@
   color: $color-text-title;
   text-transform: uppercase;
   margin: 0 0 14px;
+  padding: 0 50px;
 }
 
 .modal-cart__form-button {
@@ -41,10 +42,12 @@
 @media (min-width: $tablet-width) {
   .modal-cart__content {
     width: 566px;
+    padding: 40px 30px 46px;
   }
 
   .modal-cart__title {
     @include font(700, 30px, 57px);
+    margin-bottom: 10px;
   }
 
   .modal-cart__form-button {

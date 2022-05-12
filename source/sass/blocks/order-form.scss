@@ -123,11 +123,6 @@
     }
   }
 
-  &:focus {
-    border-color: #62d1ba;
-    outline: none;
-  }
-
   &--invalid {    //для невалидного поля
     border-color: #ff0000;
   }
@@ -192,6 +187,10 @@
   &:disabled + .order-form__control-mark {
     opacity: 0.2;
   }
+
+  &:focus + .order-form__control-mark {
+    border-color: #62d1ba;
+  }
 }
 
 .order-form__list--color .order-form__item {
@@ -200,7 +199,7 @@
 
 .order-form__item {
   &--name {
-    padding: 11px 0 10px;
+    padding: 11px 0 9px;
   }
 
   &--name .order-form__input {
@@ -282,6 +281,11 @@
   &--bottom {
     margin-bottom: 56px;
   }
+
+  .order-form__input:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -301,7 +305,7 @@
       }
 
       .order-form__label {
-        padding-top: 18px;
+        padding-bottom: 27px;
       }
     }
 
@@ -342,6 +346,7 @@
   .order-form__legend {
     width: 100px;
     padding-top: 51px;
+    padding-bottom: 10px;
     word-wrap: break-word;
 
     &--color {
@@ -368,7 +373,7 @@
     padding: 18px 0 40px 60px;
 
     &--color {
-      padding: 18px 0 20px 80px;
+      padding: 21px 0 16px 80px;
     }
   }
 
@@ -409,17 +414,17 @@
       display: flex;
       flex-wrap: wrap;
       width: 448px;
-      padding: 45px 0 30px 43px;
+      padding: 45px 0 31px 43px;
     }
 
     &--color .order-form__item {
-      padding-bottom: 20px;
+      padding-bottom: 21px;
       padding-left: 25px;
       width: 50%;
     }
 
     &--full-name {
-      padding: 40px 0 36px 67px;
+      padding: 41px 0 35px 67px;
     }
   }
 

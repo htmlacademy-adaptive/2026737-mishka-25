@@ -35,6 +35,10 @@
   .feature-list__item {
     padding: 10px 35px 10px 0;
   }
+
+  .feature-list__description {
+    padding-left: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
