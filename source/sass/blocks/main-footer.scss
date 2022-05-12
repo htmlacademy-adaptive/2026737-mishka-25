@@ -25,8 +25,8 @@
 }
 
 .main-footer__social {
-  min-width: 171px;
-  padding: 28px 0 26px;
+  min-width: 160px;
+  padding: 29px 0 26px;
   position: relative;
 
   &::after {
@@ -57,6 +57,8 @@
   }
 
   .main-footer__social {
+    padding: 25px 0 29px;
+
     &::after {
       display: none;
     }

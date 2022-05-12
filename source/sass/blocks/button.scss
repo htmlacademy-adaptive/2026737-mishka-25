@@ -3,6 +3,10 @@
   text-transform: uppercase;
   font-family: $font-basic;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid #63d1db;
+  }
 }
 
 .button--ghost {

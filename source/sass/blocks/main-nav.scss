@@ -10,7 +10,7 @@
 
 .main-nav__logo-wrap {
   align-self: center;
-  padding: 10px 0;
+  padding: 10px 0 18px;
   position: relative;
   max-width: 90px;
 }
@@ -18,7 +18,7 @@
 .main-nav__toggle {
   position: absolute;
   right: -86px;
-  top: 20px;
+  top: 22px;
   width: 20px;
   height: 14px;
   border: none;
@@ -147,6 +147,7 @@
   .main-nav--nojs .main-nav__list--mobile {
     position: static;
     display: block;
+    background-color: $color-bg;
   }
 
   .main-nav {
@@ -196,7 +197,8 @@
     }
 
     &--search .main-nav__icon {
-      left: 30px;
+      left: 32px;
+      top: 20px;
     }
 
     &--cart .main-nav__icon {
@@ -269,6 +271,7 @@
 
   .main-nav__item {
     width: 160px;
+    padding: 20px 0;
 
     &--catalog {
       width: 185px;
@@ -305,6 +308,7 @@
     order: 2;
     padding: 8px 0 0;
     align-self: flex-start;
+    max-width: 150px;
   }
 
   .main-nav__logo-image {

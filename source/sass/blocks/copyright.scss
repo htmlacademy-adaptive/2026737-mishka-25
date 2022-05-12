@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 17px;
 }
 
 .copyright__icon {
@@ -30,7 +31,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    width: 184px;
+  }
+
   .copyright__icon {
-    transform: translateY(-1px);
+    transform: translate(-2px, 4px);
+  }
+
+  .copyright__text {
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    padding: 0;
   }
 }
