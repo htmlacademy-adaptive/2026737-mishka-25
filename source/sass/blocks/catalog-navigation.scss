@@ -22,8 +22,12 @@
   display: block;
 }
 
-.catalog-navigation__link-icon--toy {
-  transform: translate(2px, -3px);
+.catalog-navigation__link-icon {
+  opacity: 0.5;
+
+  &--toy {
+    transform: translate(2px, -3px);
+  }
 }
 
 .catalog-navigation__link-content {
