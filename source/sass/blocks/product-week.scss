@@ -52,6 +52,9 @@
 .product-week__button {
   width: 260px;
   min-height: 52px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 14px;
 }
 
 .product-week__photo {
@@ -124,6 +127,7 @@
   }
 
   .product-week__button {
+    font-size: 17px;
     width: 292px;
     min-height: 52px;
     grid-column: 1 / 3;
