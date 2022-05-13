@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Мишка</title>
 </head>
 
@@ -181,8 +182,7 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="making__img-no-video" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс производства">
             </picture>
-            <button class="making__button" type="button">
-              <span class="visually-hidden">Воспроизвести видео</span>
+            <button class="making__button" type="button" aria-label="Воспроизвести видео">
               <svg class="making__button-icon" width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#play"></use>
               </svg>
