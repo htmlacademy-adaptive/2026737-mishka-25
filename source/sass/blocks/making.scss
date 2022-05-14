@@ -154,8 +154,8 @@
   .making__video-wrap {
     grid-column: 1/2;
     grid-row: 1/-1;
-    width: 682px;
-    height: 455px;
+    display: flex;
+    align-items: center;
   }
 
   .making__link {
